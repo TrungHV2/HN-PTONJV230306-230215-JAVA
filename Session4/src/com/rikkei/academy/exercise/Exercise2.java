@@ -1,5 +1,7 @@
 package com.rikkei.academy.exercise;
 
+import java.util.Arrays;
+
 public class Exercise2 {
     public static void main(String[] args) {
         /**
@@ -34,5 +36,10 @@ public class Exercise2 {
          *  5. Tìm kiếm sinh viên theo tên (tìm tương đối)
          *  6. Thoát
          * */
+
+        Book[] books = new Book[10];
+
+        Arrays.sort(books, (b1, b2) -> Double.compare(b1.getPrice(), b2.getPrice()));
+
     }
 }
